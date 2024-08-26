@@ -154,7 +154,7 @@ const AppSettings: React.FC = () => {
                     tmdb: <TmdbSettings data={data?.tmdb} {...baseAppProps} />,
                     trakt: <TraktSettings data={data?.trakt} {...baseAppProps} />,
                     instagram: <InstagramSettings data={data?.instagram} {...baseAppProps} />,
-                    allocation: <AllocationSettings data={data?.allocation} {...baseAppProps} />,
+                    allocation: <AllocationSettings data={{ list: [] }} {...baseAppProps} />,
                   } as Record<string, ReactElement>
                 )[appName]
               }

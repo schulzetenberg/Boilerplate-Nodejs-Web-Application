@@ -72,7 +72,7 @@ function carData(config, userId) {
 function save(data, userId) {
   const filter = {
     name: data.name,
-    fillTime: data.fillTime,
+    date_added: data.date_added,
     userId,
   };
 

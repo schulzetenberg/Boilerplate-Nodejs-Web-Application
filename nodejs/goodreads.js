@@ -112,7 +112,7 @@ async function uploadImage({ config, data }) {
         .replace(/[^a-zA-Z0-9-_]/g, '')
         .toLowerCase()
         .substring(0, 100),
-      transformation: [{ flags: 'force_strip', height: 220, quality: 'auto:good', crop: 'scale' }],
+      transformation: [{ flags: 'force_strip', height: 220, crop: 'scale' }],
     });
 
     if (response && response.secure_url) {
